@@ -1,0 +1,10 @@
+[cxx]
+  cpp = /usr/bin/clang
+  cc = /usr/bin/clang
+  ld = /usr/bin/clang++
+  cxxpp = /usr/bin/clang++
+  cxx = /usr/bin/clang++
+  cxxflags = -Wall -Werror -std=c++1y -fcolor-diagnostics -fno-exceptions -fno-rtti
+  ldflags = -Wall -Werror -std=c++1y -pthread
+  untracked_headers = error
+  untracked_headers_whitelist = /usr/include/.*, /usr/local/include/.*,/usr/lib/.*
