@@ -1,0 +1,16 @@
+cxx_library(
+  name = 'lib',
+  srcs = [
+    'lib.cc',
+  ],
+  headers = [
+    'lib.h',
+  ],
+  exported_headers = [
+    'lib.h',
+  ],
+  header_namespace = 'lib',
+  visibility = [
+    '//src/...',
+  ],
+)
