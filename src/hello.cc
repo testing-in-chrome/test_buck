@@ -9,5 +9,6 @@ int main() {
   cout << "This is a test!" << endl;
   cout << "This is " << lib::GetName()->c_str() << endl;
   cout << "This is a change to test gerrit" << endl;
+  cout << "This is another change to test gerrit" << endl;
   return 0;
 }
