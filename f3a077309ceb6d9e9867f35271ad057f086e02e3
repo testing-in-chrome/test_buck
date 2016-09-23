@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_bc1f48b6",
+        "filename": "src/hello.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1009204
+      },
+      "writtenOn": "2016-09-23T06:36:50Z",
+      "side": 1,
+      "message": "Thanks!",
+      "revId": "f3a077309ceb6d9e9867f35271ad057f086e02e3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
