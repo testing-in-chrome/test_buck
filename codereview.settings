@@ -1,6 +1,7 @@
 # This file is used by gcl to get repository specific information.
 CODE_REVIEW_SERVER: https://codereview.appspot.com
 CC_LIST: 
-VIEW_VC: https://github.com/testing-in-chrome/test_buck
+VIEW_VC: https://github.com/testing-in-chrome/test_buck/commit/
+BUG_PREFIX: https://github.com/testing-in-chrome/test_buck/issues/
 STATUS: 
 PROJECT: test_buck
