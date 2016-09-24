@@ -5,3 +5,4 @@ VIEW_VC: https://github.com/testing-in-chrome/test_buck/commit/
 BUG_PREFIX: https://github.com/testing-in-chrome/test_buck/issues/
 STATUS: 
 PROJECT: test_buck
+RUN_POST_UPLOAD_HOOK: True
