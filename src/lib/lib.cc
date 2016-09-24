@@ -12,7 +12,7 @@
 namespace lib {
 
 std::unique_ptr<std::string> GetName() {
-  return std::make_unique<std::string>("Chrome Tester 2 " GET_NAME("wow"));
+  return std::make_unique<std::string>("Chrome Tester 3 " GET_NAME("wow"));
 }
 
 }  // namespace lib
