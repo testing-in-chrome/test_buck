@@ -1,5 +1,9 @@
-cxx_binary(name = 'hello', srcs =
-                               [
-                                 'hello.cc',
-                               ],
-           deps = ['//src/lib:lib'], )
+cxx_binary(
+  name = 'hello',
+  srcs = [
+    'hello.cc',
+  ],
+  deps = [
+    '//src/lib:lib'
+  ],
+)

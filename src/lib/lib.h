@@ -8,7 +8,6 @@
 #ifndef SRC_LIB_LIB_H_
 #define SRC_LIB_LIB_H_
 
-
 #include <memory>
 #include <string>
 
