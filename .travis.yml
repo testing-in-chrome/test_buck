@@ -1,0 +1,10 @@
+language: cpp
+compiler: clang
+services:
+  - docker
+install:
+  - sudo apt-get update -qq
+before_script:
+  - docker build -t testing_in_chrome/test_buck .
+script:
+  - docker run -ti testing_in_chrome/test_buck /bin/sh -c "cd /home/test_buck; /home/buck/bin/buck test src:lib_test"
