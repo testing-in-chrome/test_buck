@@ -1,0 +1,52 @@
+cxx_library(
+  name = 'gtest',
+  srcs = glob(['src/**/*.cc'], excludes=['src/gtest-all.cc']),
+  headers = [
+    'src/gtest-internal-inl.h',
+  ],
+  exported_headers = {
+    'gtest/gtest.h' : 'include/gtest/gtest.h',
+    'gtest/gtest.h' : 'include/gtest/gtest.h',
+    'gtest/gtest-death-test.h' : 'include/gtest/gtest-death-test.h',
+    'gtest/gtest-message.h' : 'include/gtest/gtest-message.h',
+    'gtest/gtest-param-test.h' : 'include/gtest/gtest-param-test.h',
+    'gtest/gtest_pred_impl.h' : 'include/gtest/gtest_pred_impl.h',
+    'gtest/gtest-printers.h' : 'include/gtest/gtest-printers.h',
+    'gtest/gtest_prod.h' : 'include/gtest/gtest_prod.h',
+    'gtest/gtest-spi.h' : 'include/gtest/gtest-spi.h',
+    'gtest/gtest-test-part.h' : 'include/gtest/gtest-test-part.h',
+    'gtest/gtest-typed-test.h' : 'include/gtest/gtest-typed-test.h',
+    'gtest/internal/custom/gtest.h' : 'include/gtest/internal/custom/gtest.h',
+    'gtest/internal/custom/gtest-port.h' :
+        'include/gtest/internal/custom/gtest-port.h',
+    'gtest/internal/custom/gtest-printers.h' :
+        'include/gtest/internal/custom/gtest-printers.h',
+    'gtest/internal/gtest-death-test-internal.h' :
+        'include/gtest/internal/gtest-death-test-internal.h',
+    'gtest/internal/gtest-filepath.h' :
+        'include/gtest/internal/gtest-filepath.h',
+    'gtest/internal/gtest-internal.h' :
+        'include/gtest/internal/gtest-internal.h',
+    'gtest/internal/gtest-linked_ptr.h' :
+        'include/gtest/internal/gtest-linked_ptr.h',
+    'gtest/internal/gtest-param-util.h' :
+        'include/gtest/internal/gtest-param-util.h',
+    'gtest/internal/gtest-param-util-generated.h' :
+        'include/gtest/internal/gtest-param-util-generated.h',
+    'gtest/internal/gtest-port.h' :
+        'include/gtest/internal/gtest-port.h',
+    'gtest/internal/gtest-port-arch.h' :
+        'include/gtest/internal/gtest-port-arch.h',
+    'gtest/internal/gtest-string.h' : 'include/gtest/internal/gtest-string.h',
+    'gtest/internal/gtest-tuple.h' : 'include/gtest/internal/gtest-tuple.h',
+    'gtest/internal/gtest-type-util.h' :
+        'include/gtest/internal/gtest-type-util.h',
+  },
+  header_namespace = '',
+  exported_linker_flags = [
+    '-pthread',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)

@@ -6,4 +6,15 @@ cxx_binary(
   deps = [
     '//src/lib:lib'
   ],
+),
+
+cxx_test(
+  name = 'lib_test',
+  srcs = [
+    'test.cc',
+  ],
+  deps = [
+    '//src/lib:lib',
+    '//src/gtest:gtest',
+  ],
 )

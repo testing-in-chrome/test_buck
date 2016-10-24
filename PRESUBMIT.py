@@ -11,7 +11,7 @@ def CheckChange(input_api, output_api):
   if not input_api.change.BUG or not input_api.change.TEST:
     results.extend([output_api.PresubmitError(
         'Must provide a BUG= line and a TEST line.')])
-  if not input_api.change.BUG.startswith('#'):
+  if input_api.change.BUG and not input_api.change.BUG.startswith('#'):
     results.extend([output_api.PresubmitError('BUG= must start with "#".')])
   return results
 
